@@ -223,9 +223,30 @@
     <Compile Include="Migrations\201704011039165_ApplyAnnotationsToCustomerName.Designer.cs">
       <DependentUpon>201704011039165_ApplyAnnotationsToCustomerName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201704011126272_addnametoclass.cs" />
+    <Compile Include="Migrations\201704011126272_addnametoclass.Designer.cs">
+      <DependentUpon>201704011126272_addnametoclass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704011131344_setnametoclass.cs" />
+    <Compile Include="Migrations\201704011131344_setnametoclass.Designer.cs">
+      <DependentUpon>201704011131344_setnametoclass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704011144094_AddBirthDateToCustomer.cs" />
+    <Compile Include="Migrations\201704011144094_AddBirthDateToCustomer.Designer.cs">
+      <DependentUpon>201704011144094_AddBirthDateToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704011236556_AddMoviesTable.cs" />
+    <Compile Include="Migrations\201704011236556_AddMoviesTable.Designer.cs">
+      <DependentUpon>201704011236556_AddMoviesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704011237563_SetGenreValues.cs" />
+    <Compile Include="Migrations\201704011237563_SetGenreValues.Designer.cs">
+      <DependentUpon>201704011237563_SetGenreValues.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
@@ -293,11 +314,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Movies\Random.cshtml" />
     <Content Include="Views\Shared\_NavBar.cshtml" />
     <Content Include="Views\Movies\Index.cshtml" />
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Customers\Details.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -325,6 +346,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201704011039165_ApplyAnnotationsToCustomerName.resx">
       <DependentUpon>201704011039165_ApplyAnnotationsToCustomerName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704011126272_addnametoclass.resx">
+      <DependentUpon>201704011126272_addnametoclass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704011131344_setnametoclass.resx">
+      <DependentUpon>201704011131344_setnametoclass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704011144094_AddBirthDateToCustomer.resx">
+      <DependentUpon>201704011144094_AddBirthDateToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704011236556_AddMoviesTable.resx">
+      <DependentUpon>201704011236556_AddMoviesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704011237563_SetGenreValues.resx">
+      <DependentUpon>201704011237563_SetGenreValues.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
