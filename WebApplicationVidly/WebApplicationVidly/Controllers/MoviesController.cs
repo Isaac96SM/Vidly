@@ -7,7 +7,7 @@ using System.Web.Mvc;
 using WebApplicationVidly.Models;
 using WebApplicationVidly.ViewModels;
 
-namespace Vidly.Controllers
+namespace WebApplicationVidly.Controllers
 {
     public class MoviesController : Controller
     {
