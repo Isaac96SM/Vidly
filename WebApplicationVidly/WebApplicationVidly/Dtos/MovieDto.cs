@@ -24,5 +24,7 @@ namespace WebApplicationVidly.Dtos
         [Required(ErrorMessage = "Stock must be between 1 and 30")]
         [Range(1, 30)]
         public int Stock { get; set; }
+
+        public GenreDto Genre { get; set; }
     }
 }
