@@ -5,6 +5,7 @@ using System.Web;
 
 namespace WebApplicationVidly.Models
 {
+    public class RoleName
     {
         public const string CanManageMovies = "CanManageMovies";
     }
