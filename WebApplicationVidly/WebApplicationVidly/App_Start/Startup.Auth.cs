@@ -6,6 +6,7 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
 using WebApplicationVidly.Models;
+using Microsoft.Owin.Security.Facebook;
 
 namespace WebApplicationVidly
 {
@@ -54,9 +55,11 @@ namespace WebApplicationVidly
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            app.UseFacebookAuthentication(
-               appId: "240967446371701",
-               appSecret: "d1ab3530e81bf82042ae59de659229b0");
+            app.UseFacebookAuthentication(new FacebookAuthenticationOptions
+            {
+                
+                BackchannelHttpHandler = new FacebookBackChannelHandler()
+            });
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{
