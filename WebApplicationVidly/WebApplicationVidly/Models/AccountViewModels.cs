@@ -12,6 +12,10 @@ namespace WebApplicationVidly.Models
         [Required]
         [Display(Name = "Driving License")]
         public string DrivingLicense { get; set; }
+
+        [Required]
+        [StringLength(50)]
+        public string Phone { get; set; }
     }
 
     public class ExternalLoginListViewModel
@@ -76,6 +80,10 @@ namespace WebApplicationVidly.Models
         [Required]
         [Display(Name = "Licencia de conducir")]
         public string DrivingLicense { get; set; }
+
+        [Required]
+        [StringLength(50)]
+        public string Phone { get; set; }
 
         [Required]
         [StringLength(100, ErrorMessage = "El número de caracteres de {0} debe ser al menos {2}.", MinimumLength = 6)]
