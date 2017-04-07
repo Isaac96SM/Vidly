@@ -28,5 +28,7 @@ namespace WebApplicationVidly.Models
         [Range(1, 30)]
         [Display(Name = "Number in Stock")]
         public int Stock { get; set; }
+
+        public byte NumberAvailable { get; set; }
     }
 }
